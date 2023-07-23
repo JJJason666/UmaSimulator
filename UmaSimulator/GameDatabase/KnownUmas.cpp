@@ -24,6 +24,10 @@ const std::string GameDatabase::AllUmaNames[ALL_UMA_NUM] = {
   "火鸡帝王",
   "爱丽数码",
   "僵尸数码"
+  "也文摄辉"
+  "夏装大树快车"   
+  "北白"
+  "葛城王牌"     // 2023.7.23添加新马
 };
 
 
@@ -42,7 +46,11 @@ const std::map<int, int> GameDatabase::AllUmaGameIdToSimulatorId =
   {100301,10},
   {100302,11},
   {101901,12},
-  {101902,13}
+  {101902,13},
+  {107801,14},
+  {101002,15},
+  {106802,16},
+  {110401,17},
 };
 const UmaData GameDatabase::AllUmas[ALL_UMA_NUM] =
 {
@@ -283,5 +291,73 @@ const UmaData GameDatabase::AllUmas[ALL_UMA_NUM] =
       {
         104,111,120,129,86
       },
-    }
+    },
+    //14,也文摄辉
+    {
+      5,
+      {
+        false,false,false,false,false,false, false,false,false,false,false,true, false,false,false,false,false,false, false,false,false,false,false,false, //第一年
+        false,true,false,false,false,false, true,false,false,true,false,false, false,false,false,false,false,false, false,true,false,false,false,false, //第二年
+        false,false,false,false,false,false, true,false,false,false,false,false, false,false,false,false,false,false, false,false,false,true,false,true, //第三年
+        false,false,false,false,false,true
+      },
+      {
+        10,0,0,10,10
+      },
+      {
+        119,101,99,118,113
+      },
+
+    },
+    //15,夏装大树快车 
+    {
+      5,
+      {
+        false,false,false,false,false,false, false,false,false,false,false,true, false,false,false,false,false,false, false,false,false,false,false,false, //第一年
+        false,true,false,false,false,false, true,false,false,true,false,false, false,false,false,false,false,false, false,true,false,false,false,false, //第二年
+        false,false,false,false,false,false, true,false,false,false,false,false, false,false,false,false,false,false, false,false,false,true,false,true, //第三年
+        false,false,false,false,false,true
+      },
+      {
+        0,0,30,0,0
+      },
+      {
+        124,87,130,112,97
+      },
+
+    },
+    //16,北白
+    {
+      5,
+      {
+        false,false,false,false,false,false, false,false,false,false,false,true, false,false,false,false,false,false, false,false,false,false,false,false, //第一年
+        false,true,false,false,false,false, true,false,false,true,false,false, false,false,false,false,false,false, false,true,false,false,false,false, //第二年
+        false,false,false,false,false,false, true,false,false,false,false,false, false,false,false,false,false,false, false,false,false,true,false,true, //第三年
+        false,false,false,false,false,true
+      },
+      {
+        10,0,10,0,10
+      },
+      {
+       122,104,108,100,116
+      },
+
+    },
+    //17,葛城王牌
+    {
+      5,
+      {
+        false,false,false,false,false,false, false,false,false,false,false,true, false,false,false,false,false,false, false,false,false,false,false,false, //第一年
+        false,true,false,false,false,false, true,false,false,true,false,false, false,false,false,false,false,false, false,true,false,false,false,false, //第二年
+        false,false,false,false,false,false, true,false,false,false,false,false, false,false,false,false,false,false, false,false,false,true,false,true, //第三年
+        false,false,false,false,false,true
+      },
+      {
+        10,0,10,10,0
+      },
+      {
+       121,105,118,112,94
+      },
+
+    },
 };
